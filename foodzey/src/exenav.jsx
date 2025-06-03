@@ -73,3 +73,99 @@ function exebar() {
     )
 }
 export default exebar;
+
+
+
+
+
+const Nevbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOffcanvas = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className='bg-white '>
+      {/* Main Nav */}
+      <div className='flex items-center font-medium  justify-between px-4 py-3 md:justify-around'>
+        <div className='text-3xl flex justify-end w-full md:justify-start md:w-auto md:left  relative'>
+          <button onClick={toggleOffcanvas}>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+        {/* Desktop Menu */}
+        <ul className='   md:flex hidden uppercase gap-8   font-[poppins]'>
+          {["Home", "Category", "Products", "Pages", "Blog", "Element"].map((item, idx) => (
+            <li key={idx} className="relative no-underline ">
+              <Link
+                to={`/${item === "Home" ? "" : item}`}
+                className="px-3 py-7 inline-block text-inherit"
+              >
+                {item}
+              </Link>
+              <ion-icon name="chevron-down"></ion-icon>
+            </li>
+
+          ))}
+        </ul>
+
+        {/* Contact (Desktop Only) */}
+        <ul className='md:flex hidden items-center gap-2'>
+          <li className='text-xl relative font-[Segoe]'>
+            <ion-icon name="call"></ion-icon>
+          </li>
+          <li className='text-sm font-medium'>+123 (456) (7890)</li>
+        </ul>
+      </div>
+      <div>
+        {/* Logo */}
+        <div className='md:flex  hidden items-center space-x-2'>
+          <img src={logo} alt="Logo" className='w-28 md:w-40' />
+        </div>
+      </div>
+
+      {/* Mobile Offcanvas Menu */}
+      <div
+        className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
+      >
+        <div className='flex items-center justify-between p-4 border-b'>
+          <img src={logo} alt="Logo" className='w-24' />
+          <button onClick={toggleOffcanvas} className='text-2xl'>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+        <ul className='flex flex-col p-4 gap-4 font-[poppins] uppercase'>
+          {["Home", "Category", "Products", "Pages", "Blog", "Element"].map((item, idx) => (
+            <li key={idx}>
+              <Link
+                to={`/${item === "Home" ? "" : item}`}
+                className='block text-gray-800 hover:text-blue-600'
+                onClick={toggleOffcanvas}
+              >
+                {item}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className='p-4 border-t'>
+          <p className='text-sm text-gray-600'>Contact: +123 (456) (7890)</p>
+        </div>
+      </div>
+
+      {/* Overlay */}
+      {isOpen && (
+        <div
+          onClick={toggleOffcanvas}
+          className="fixed inset-0 bg-black opacity-25 z-40 md:hidden"
+        ></div>
+      )}
+
+      {/* Page Content */}
+      <Outlet />
+    </nav>
+  );
+};
+
+export default Nevbar;
