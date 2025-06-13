@@ -67,7 +67,7 @@ const Allproductlist = () => {
         </select>
       </div>
     </div>
-       <div className="lg:col-span-3 grid sm:grid-cols-2 mx-auto lg:grid-cols-3 mt-10 gap-3">
+       <div className="lg:col-span-4 grid sm:grid-cols-2 mx-auto lg:grid-cols-4 mt-10 gap-3">
                                           {/* <!-- Product Card --> */}
                                           <div className="max-w-xs mx-auto p-4 pt-0">
                                               <div className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
@@ -446,6 +446,7 @@ const Allproductlist = () => {
                                           </div>
                   
                   
+                  
                                           <div className="max-w-xs mx-auto p-4 pt-0">
                                               <div className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
                                                   <div className="p-3">
@@ -492,9 +493,149 @@ const Allproductlist = () => {
                                                   </div>
                                               </div>
                                           </div>
-                                      </div>
+                                            <div className="max-w-xs mx-auto p-4 pt-0">
+                                              <div className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
+                                                  <div className="p-3">
+                                                      <img src={banner1} alt="Sweet crunchy nut mix"
+                                                          className="w-full h-48 object-contain rounded-md" />
+                                                  </div>
+                                                  <div className="flex justify-center">
+                                                      <div className="bg-white border border-gray-300 rounded-full p-2 py-1 -mt-8 z-10">
+                                                          <ion-icon name="lock-closed-outline"></ion-icon>
+                                                      </div>
+                                                  </div>
+                                                  <div className="text-center p-4 pt-2">
+                                                      <p className="text-sm text-gray-500">Snacks</p>
+                                                      <div className="flex justify-center items-center gap-1 mt-1">
+                                                          <div className="flex text-red-500">
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                          </div>
+                                                          <span className="text-sm text-gray-600">(5.0)</span>
+                                                      </div>
+                                                      <h3 className="mt-2 font-semibold !text-sm text-gray-800">Sweet crunchy nut mix 250gm pack</h3>
+                                                      <div className="mt-2">
+                                                          <span className="text-lg text-red-600 font-bold mr-2">$120.25</span>
+                                                          <span className="text-sm line-through text-gray-400">$123.25</span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                            <div className="max-w-xs mx-auto p-4 pt-0">
+                                              <div className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
+                                                  <div className="p-3">
+                                                      <img src={banner4} alt="Sweet crunchy nut mix"
+                                                          className="w-full h-48 object-contain rounded-md" />
+                                                  </div>
+                                                  <div className="flex justify-center">
+                                                      <div className="bg-white border border-gray-300 rounded-full p-2 py-1 -mt-8 z-10">
+                                                          <ion-icon name="lock-closed-outline"></ion-icon>
+                                                      </div>
+                                                  </div>
+                                                  <div className="text-center p-4 pt-2">
+                                                      <p className="text-sm text-gray-500">Snacks</p>
+                                                      <div className="flex justify-center items-center gap-1 mt-1">
+                                                          <div className="flex text-red-500">
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                          </div>
+                                                          <span className="text-sm text-gray-600">(5.0)</span>
+                                                      </div>
+                                                      <h3 className="mt-2 font-semibold !text-sm text-gray-800">Sweet crunchy nut mix 250gm pack</h3>
+                                                      <div className="mt-2">
+                                                          <span className="text-lg text-red-600 font-bold mr-2">$120.25</span>
+                                                          <span className="text-sm line-through text-gray-400">$123.25</span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                     
+                                       <div className="max-w-xs mx-auto p-4 pt-0">
+                                              <div className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
+                                                  <div className="p-3">
+                                                      <img src={banner2} alt="Sweet crunchy nut mix"
+                                                          className="w-full h-48 object-contain rounded-md" />
+                                                  </div>
+                                                  <div className="flex justify-center">
+                                                      <div className="bg-white border border-gray-300 rounded-full p-2 py-1 -mt-8 z-10">
+                                                          <ion-icon name="lock-closed-outline"></ion-icon>
+                                                      </div>
+                                                  </div>
+                                                  <div className="text-center p-4 pt-2">
+                                                      <p className="text-sm text-gray-500">Snacks</p>
+                                                      <div className="flex justify-center items-center gap-1 mt-1">
+                                                          <div className="flex text-red-500">
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                                                  <path
+                                                                      d="M12 .587l3.668 7.568L24 9.748l-6 5.897 1.417 8.268L12 18.896 4.583 23.913 6 15.645 0 9.748l8.332-1.593z" />
+                                                              </svg>
+                                                          </div>
+                                                          <span className="text-sm text-gray-600">(5.0)</span>
+                                                      </div>
+                                                      <h3 className="mt-2 font-semibold !text-sm text-gray-800">Sweet crunchy nut mix 250gm pack</h3>
+                                                      <div className="mt-2">
+                                                          <span className="text-lg text-red-600 font-bold mr-2">$120.25</span>
+                                                          <span className="text-sm line-through text-gray-400">$123.25</span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
 
-                                      
+
+
+                                       </div>
                                 <div class="flex justify-center my-8">
   <nav class="inline-flex items-center border border-gray-300 rounded overflow-hidden">
    <Link to="/"><button class="px-4 py-2 bg-gray-100 text-gray-700 hover:bg-gray-200">Previous</button></Link>

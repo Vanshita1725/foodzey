@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom"; // Corrected to react-router-dom
 
 const Navbardropdown = ({ mode = 'horizontal' }) => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -73,14 +73,24 @@ const Navbardropdown = ({ mode = 'horizontal' }) => {
     >
       {navItems.map((item) => (
         <li className="relative px-1 py-3" key={item.key}>
-          <button
-            onClick={() => toggleDropdown(item.key)}
-            className="text-black text-sm flex items-center gap-2 focus:outline-none w-full text-left"
-          >
-            {item.label}
-<ion-icon name="chevron-down-outline"></ion-icon>          </button>
+          <div className="flex items-center justify-between gap-2">
+            <Link
+              to={item.path}
+              className="text-black text-sm !no-underline hover:underline focus:outline-none"
+            >
+              {item.label}
+            </Link>
+            {item.dropdown && (
+              <button
+                onClick={() => toggleDropdown(item.key)}
+                className="text-black"
+              >
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+            )}
+          </div>
 
-          {activeDropdown === item.key && (
+          {activeDropdown === item.key && item.dropdown && (
             <ul
               className={`${
                 mode === 'horizontal'
