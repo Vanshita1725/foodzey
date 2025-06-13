@@ -9,12 +9,12 @@ import Blog from "./Blog";
 import Element from "./Element";
 import Home2 from "./Componenets/Home2";
 import Home1 from "./Componenets/home1";
-import Productlist2 from "./productlist2";
+import Productlist2 from "./Productlist2";
 import Allproductlist from "./Allproductlist";
 import Aboutus from "./Aboutus";
 import Login from "./Componenets/Login";
 import Ragistion from "./Componenets/Ragistion";
-import Cart from "./cart";
+import Cart from "./Cart";
 import Checkout from "./Checkout";
 import Faq from "./Faq";
 
